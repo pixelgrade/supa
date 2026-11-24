@@ -1,0 +1,60 @@
+{
+  "aliases": {
+    "field journal": "field-journal",
+    "field-journal": "field-journal"
+  },
+  "modern": [],
+  "docs_url": "https://woodland.example/docs/",
+  "skip_classic": [],
+  "theme_requirements_path": "requirements/",
+  "classic_update_keywords": [],
+  "requirement_snippet_patterns": [],
+  "search_terms": {
+    "library": [
+      "\\blibrary\\b"
+    ],
+    "field journal": [
+      "\\bfield journal\\b"
+    ]
+  },
+  "context_notes": [
+    {
+      "file": "field-journal.md",
+      "patterns": [
+        "\\bjournal\\b"
+      ]
+    }
+  ],
+  "voice_guide": "voice.md",
+  "crawl_products": [
+    "field-journal"
+  ],
+  "extra_seed_paths": [],
+  "extra_seed_suffix": "",
+  "concierge_url": "",
+  "concierge_text": null,
+  "concierge_link": null,
+  "brand": "woodland press",
+  "search_domains": [
+    "developer.wordpress.org",
+    "developer.mozilla.org",
+    "github.com"
+  ],
+  "customer_url_variable": "SUPA_CUSTOMER_URL",
+  "customer_secret_variable": "SUPA_CUSTOMER_SECRET",
+  "default_crawl_products": [
+    "field-journal"
+  ],
+  "generic_source_words": [],
+  "search_prefix": "",
+  "capability_signals": [
+    "\\bsupported\\b",
+    "\\bcompatible\\b",
+    "\\brequires?\\b",
+    "\\bsettings?\\b",
+    "\\boptions?\\b"
+  ],
+  "repo_contradictions": [],
+  "feature_terms": [],
+  "literal_feature_claims": []
+}

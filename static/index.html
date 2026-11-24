@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-mailbox-web="__MAILBOX_WEB__">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Supa</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="stylesheet" href="/static/style.css?v=__VERSION__">
+</head>
+<body>
+    <div class="terminal">
+        <!-- Welcome Section -->
+        <div class="welcome">
+            <div class="welcome-columns">
+                <div class="welcome-left">
+                    <pre class="ascii-logo">███████╗██╗   ██╗██████╗  █████╗
+██╔════╝██║   ██║██╔══██╗██╔══██╗
+███████╗██║   ██║██████╔╝███████║
+╚════██║██║   ██║██╔═══╝ ██╔══██║
+███████║╚██████╔╝██║     ██║  ██║
+╚══════╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝</pre>
+                    <div class="tagline">__DASHBOARD_TAGLINE__</div>
+                </div>
+                <div class="welcome-right">
+                    <div class="section">
+                        <div class="section-title">Queue</div>
+                        <div id="queue-summary"><span class="spinner">✽</span> <span id="loading-word">Loading</span>…</div>
+                        <div class="queue-list" id="queue-list"></div>
+                    </div>
+                    <div class="stats-summary" id="stats-summary"></div>
+                    <button class="btn btn-secondary" id="reprocess-btn" title="Recover tickets stranded by a Claude/Codex outage" style="display:none">↻ Recover stuck tickets</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terminal Content (scrollable - contains output + input) -->
+        <div class="terminal-content" id="terminal-content">
+            <!-- Output will be inserted here -->
+
+            <!-- Input Line (always at bottom of content) -->
+            <div class="input-line" id="input-line">
+                <span class="prompt">❯</span>
+                <input type="text"
+                       id="command-input"
+                       placeholder="__RUN_HINT__"
+                       autocomplete="off"
+                       spellcheck="false"
+                       autofocus>
+            </div>
+            <div class="input-hint">? for commands</div>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span id="status-knowledge">-</span>
+            </div>
+            <div class="status-right">
+                <a href="__SOURCE_URL__" class="status-link">Source code</a>
+                <a href="__MAILBOX_INBOX__" target="_blank" class="status-link">Inbox</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <dialog id="auth-modal">
+        <div class="modal-content">
+            <h3>Admin Key Required</h3>
+            <input type="password"
+                   id="admin-key-input"
+                   placeholder="Enter admin key">
+            <button id="auth-submit-btn">Submit</button>
+        </div>
+    </dialog>
+
+    <script src="/static/app.js?v=__VERSION__"></script>
+</body>
+</html>

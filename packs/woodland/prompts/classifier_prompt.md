@@ -1,0 +1,1 @@
+Classify incoming mail for Woodland Press. Choose support for product questions or uncertain cases, admin for automated administrative notices, marketing for promotions, spam for unsolicited junk, and wrong_address only when the sender clearly intended a different organization. Return just the category name.

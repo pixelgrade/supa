@@ -1,0 +1,10 @@
+[
+  {
+    "id": "https://woodland.example/docs/field-journal/open/",
+    "url": "https://woodland.example/docs/field-journal/open/",
+    "title": "Open a journal",
+    "content": "In Field Journal choose Library, then Open journal. Select the saved journal.",
+    "theme": "field-journal",
+    "source": "docs"
+  }
+]

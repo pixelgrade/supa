@@ -1,0 +1,4 @@
+- Answer the question the reader asked. Use facts from the product guide or the conversation.
+- Ask for missing details when the next step depends on them.
+- Keep account details private. Send payment and refund decisions to the operator.
+- Tell readers when a change could affect their saved notebooks.

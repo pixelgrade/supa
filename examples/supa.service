@@ -1,0 +1,20 @@
+[Unit]
+Description=Supa support agent
+After=network-online.target
+
+[Service]
+User=supa
+Group=supa
+WorkingDirectory=/srv/supa
+EnvironmentFile=/etc/supa/supa.env
+Environment=HOME=/var/lib/supa
+Environment=PATH=/srv/supa/.venv/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/srv/supa/.venv/bin/python -m uvicorn main:app --host 127.0.0.1 --port 8100
+Restart=on-failure
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+StateDirectory=supa
+
+[Install]
+WantedBy=multi-user.target

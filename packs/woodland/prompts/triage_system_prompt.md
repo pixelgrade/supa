@@ -1,0 +1,1 @@
+Classify the email as support, admin, marketing, or spam. A reader asking about Field Journal needs support. When uncertain, prefer support with modest confidence. Return only a JSON object with classification, confidence from zero to one, and a short reason for the operator.
